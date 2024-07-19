@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Reserva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registro de Reserva</h1>
+    <form action="api/reserva" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="modelo">Modelo del Vehículo:</label>
+        <input type="text" id="modelo" name="modelo" required><br>
+
+        <label for="horarioEntrega">Horario de Entrega:</label>
+        <input type="text" id="horarioEntrega" name="horarioEntrega" required><br>
+
+        <label for="formaEntrega">Forma de Entrega:</label>
+        <select id="formaEntrega" name="formaEntrega" required>
+            <option value="domicilio">Domicilio</option>
+            <option value="en el lugar">En el Lugar</option>
+        </select><br>
+
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
